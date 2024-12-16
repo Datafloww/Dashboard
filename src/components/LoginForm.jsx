@@ -1,4 +1,4 @@
-import { loginUser,verifyUser } from "../lib/auth"
+import { loginUser } from "../lib/auth"
 import { useState } from "react"
 const LoginForm  = () => {
   const [credentails, setCredentials ]= useState({});
@@ -22,8 +22,6 @@ const LoginForm  = () => {
             }/>
             <button type="submit" onClick={login}>Login</button>
         </form>
-
-        <button onClick={verifyUser}>Verify</button>
     </div>
   )
 }
